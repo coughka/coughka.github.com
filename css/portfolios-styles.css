@@ -96,3 +96,19 @@
     margin:5% auto;
     width:85%;
 }
+
+@media screen and (max-width: 768px) {
+    .bikees, .financial, .tiny-one, .portfolio-title, .wheel, .switch {
+        grid-column:1/13;
+        grid-row:auto;
+    }
+
+    .portfolio-title .divider {
+        justify-self: center;
+    }
+
+    .portfolio {
+        width:95%;
+    }
+
+}

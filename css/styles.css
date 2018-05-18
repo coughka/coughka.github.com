@@ -518,6 +518,7 @@ input[type = "submit"]:hover {
 
 .email {
     grid-column:2;
+    text-align:right;
     
 }
 
@@ -531,9 +532,7 @@ input[type = "submit"]:hover {
     justify-content: center;
     background-color:rgba(210,234,227,1);
     font-family:"BigJohn", sans-serif;
-    font-size:0.707rem;
-    
-    
+    font-size:0.707rem;  
 }
 
 .bottom {
