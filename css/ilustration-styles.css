@@ -1,9 +1,6 @@
-
-
 .footer-content {
     background-color:rgba(219,120,120,1);
 }
-
 
 .illustration-content {
     display:grid;
@@ -28,7 +25,7 @@ figcaption {
     text-transform: uppercase;
     vertical-align: middle;
     text-align:center;
-    padding-top:0.35rem;
+    padding:0.35rem 0;
     
     
 }
@@ -231,8 +228,7 @@ figure {
     .ilustration-item {
         width:30%;
         border:none;
-        margin:1.25%;
-        
+        margin:1.25%;   
     }
 
     .ilustration-item img {
@@ -247,16 +243,19 @@ figure {
 
 @media screen and (max-width: 768px) {
     .ilustration-item {
-        width:45%;
-}
+        width:47.5%;
+    }
+
+    .ilustration-item img{
+        width:97.5%;
+    }
 }
 
 @media screen and (max-width: 425px) {
     .ilustration-item {
         width:100%;
         margin:1.25% auto;
-    
-}
+    }
 
     .section-title h2 {
         font-size:2rem;

@@ -330,6 +330,7 @@ h3 {
 .work-expierence {
     grid-row:1/3;
     grid-column:1;
+    grid-row:1/4;
     place-self:center;
 }
 
@@ -365,7 +366,7 @@ h5 {
     background-color:black;
     height:5px;
     width:95%;
-    margin:5% 0;
+    margin:2.5% 0;
 }
 
 .block-edu {
@@ -374,10 +375,6 @@ h5 {
 
 .block-edu img {
     width:64px;
-}
-
-.edu-content a {
-    
 }
 
 .edu-content a:hover {
@@ -391,12 +388,32 @@ h5 {
 }
 
 .bsu img {
-    filter:invert(10%)
+    filter:invert(10%);
 }
 
 .skills {
     grid-column:2;
 }
+
+ul {
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    padding:0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    white-space: nowrap;
+    background-color:rgba(210,234,227,1);
+    margin:0.25rem;
+    line-height: 1.2;
+}
+
+.hobby ul li {
+    background-color:rgba(210,234,227,0.5);
+}
+
 
 /* CONTACT ME */
 
@@ -467,7 +484,7 @@ label {
 
 .social-bar i:hover {
     background-color:black;
-    color:rgb(39, 141, 110);
+    color:rgba(210,234,227,1);
     box-shadow:
         0 0 0 2.5px rgba(210,234,227,1),
         0 0 0 5px black,
@@ -515,7 +532,7 @@ input[type = "submit"]:hover {
 
 .phone {
     grid-column:1;
-    float:left;
+    text-align:left;    
 }
 
 .email {
