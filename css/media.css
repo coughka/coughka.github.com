@@ -84,7 +84,7 @@
         grid-column:1/5;
     }
 
-    .education, .work-expierence {
+    .education, .work-expierence, .skills, .hobby {
         grid-column:1/3;
     }
 
