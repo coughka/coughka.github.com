@@ -8,7 +8,7 @@
 }
 
 .portfolio-block {
-   
+ 
     min-height:575px;
     background-color:rgba(190,190,190,0.1);
 }
@@ -67,7 +67,7 @@
     background-color:rgba(190,190,190,0.5);
 }
 
-.portfolio-title, .wheel, .switch {
+.portfolio-title, .wheel, .switch, .transworld {
     grid-column:1/7;
 }
 
@@ -92,13 +92,19 @@
     grid-row:3;
 }
 
+
+
 .portfolio-block-content {
     margin:5% auto;
     width:85%;
 }
 
+
+
+
+
 @media screen and (max-width: 768px) {
-    .bikees, .financial, .tiny-one, .portfolio-title, .wheel, .switch {
+    .bikees, .financial, .tiny-one, .portfolio-title, .wheel, .switch, .transworld {
         grid-column:1/13;
         grid-row:auto;
     }
