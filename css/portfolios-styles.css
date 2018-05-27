@@ -76,7 +76,7 @@
 }
 
 
-.bikees, .financial, .tiny-one {
+.bikees, .financial, .tiny-one, .unity {
     grid-column:7/13;
 }
 
@@ -104,7 +104,7 @@
 
 
 @media screen and (max-width: 768px) {
-    .bikees, .financial, .tiny-one, .portfolio-title, .wheel, .switch, .transworld {
+    .bikees, .financial, .tiny-one, .portfolio-title, .wheel, .switch, .transworld, .unity {
         grid-column:1/13;
         grid-row:auto;
     }
