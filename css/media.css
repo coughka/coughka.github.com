@@ -111,6 +111,18 @@
     .section-title h2 {
         font-size:2rem;
     }
+
+    .section-title {
+        justify-content:center;
+    }
+
+    .divider {
+        width:95%;
+    }
+
+    .social-bar a:last-child {
+        display:none;
+    }
 }
 
 @media screen and (max-width: 375px) {
