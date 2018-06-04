@@ -1,0 +1,39 @@
+.under-contstruction img {
+    width:10rem;
+}
+
+.under-contstruction {
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.under-contstruction img {
+    align-self: end;
+    animation: move ease 15s infinite;
+}
+
+.under-contstruction .section-title {
+    align-self: start;
+}
+
+
+@keyframes move {
+    0% {
+      transform: translate(0,0);
+      
+    }
+    25%{
+        transform: translate(25vw,0);
+        
+    }
+    50% {
+        transform: translate(50vw,0);
+        
+    }
+
+    75% {
+        transform: translate(25vw,0);
+    }
+  }
