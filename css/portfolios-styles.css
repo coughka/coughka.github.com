@@ -1,122 +1,141 @@
-.portfolio {
+@import url("normalize.css");
+
+.portofolio-content {
     display:grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows:auto;
     grid-gap:1rem;
-    width:85%;
+    width:95%;
+    margin:1rem auto;
+}
+
+.section-title-content {
+    width:75%;
     margin:0 auto;
-}
+    place-self:center;
 
-.portfolio-block {
- 
-    min-height:575px;
-    background-color:rgba(190,190,190,0.1);
-}
-
-.portfolio-block-content {
     display:grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto;
-    grid-gap:1rem;
+    justify-items:center;
 }
 
-.portfolio-block-content img:first-child {
-    grid-column:1/5;
+.section-title-content h2 {
+    text-align:center;
 }
 
-.portfolio-block-content img:nth-child(2) {
-    grid-column:3/5;
-    grid-row:2/4;  
+.section-title-content img {
+    width:20%;
 }
 
-.financial .portfolio-block-content img:nth-child(2) {
-    grid-column:1/3;
+.portfolio-divider {
+    margin:2.5% auto;
+    width:50%;
+    height:0.5rem;
+    background-color:black;
 }
 
-.portfolio-block-content img:nth-child(3) {
-    grid-row:3/6;
-    grid-column:1/3;   
+.portfolio-item-title {
+    background:rgba(255,255,255,0.95);
+    padding:0.5rem 1rem;
+    text-align:center;
+    width: auto;
+    margin:-1rem auto;
+    white-space: nowrap;
 }
 
-.financial .portfolio-block-content img:nth-child(3) {
-    grid-column:3/5;
+.portfolio-item-title:hover {
+    transform: scale(1.05);
 }
 
-.portfolio-block-content img:nth-child(4) {
-    grid-row:4/6;
-    grid-column:3/5;
-    align-self:end;   
+.portfolio-item {
+    min-height:50vh;
+    display:grid;
+    align-items:end;
+    background-size:cover;    
 }
 
-.financial .portfolio-block-content img:nth-child(4) {
-    grid-column:1/3;
+.bikees {
+    background-image:url("../images/portfolio-preview/bikees-preview-2.png");
 }
 
-.portfolio-block-description {
-    grid-column:1/3;
+.wheel-and-wheelbar {
+    background-image:url("../images/portfolio-preview/wheel-and-wheelbar-preview-2.png");
+}
+
+.unity {
+    grid-column: span 8;
+    background-image:url("../images/portfolio-preview/unity-preview.png");        
+}
+
+.transworld {
+    background-image:url("../images/portfolio-preview/transworld-preview-4.png");
     grid-row:2;
 }
 
-.financial .portfolio-block-description {
-    grid-column:3/5;
-    grid-row:2;
-    text-align:right;
+.finance {
+    background-image:url("../images/portfolio-preview/preview-finance-switch.png");
+    background-size:contain;
 }
 
-.portfolio-block-description a:hover {
-    background-color:rgba(190,190,190,0.5);
+.tyny {
+    grid-column:span 4;
+    background-image:url("../images/portfolio-preview/tiny-one-preview-3.png");
 }
 
-.portfolio-title, .wheel, .switch, .transworld, .gratia {
-    grid-column:1/7;
+.switch {
+    background-image:url("../images/portfolio-preview/Switch-studio-preview.png");
 }
 
-.portfolio-title {
-    align-self:start;
+.gratia {
+    background-image:url("../images/portfolio-preview/gratia-preview.png");
+    background-size:contain;
 }
 
-
-.bikees, .financial, .tiny-one, .unity {
-    grid-column:7/13;
+.gratia, .finance, .switch {
+    grid-column:span 6;
 }
 
-.bikees, .portfolio-title {
-    grid-row:1;
+.bikees, .wheel-and-wheelbar, .transworld {
+    grid-column: span 4;
 }
 
-.wheel, .financial {
-    grid-row:2;
+.portfolio-section-title, .gratia, .tbc {
+    grid-column:span 12;
 }
 
-.tiny-one-two, .tiny-one {
-    grid-row:3;
+.portfolio-item-info {
+    height:15vh;
+    background-color:rgba(0,0,0,0.5);
+    margin-bottom:-5px;
+    display:grid;
+    align-items:center;
 }
 
-.portfolio-block-content {
-    margin:5% auto;
-    width:85%;
+.portfolio-item-info p {
+    color:white;
+    text-align:center;
+    padding:1rem;
 }
 
 .tbc {
     text-align: center;
 }
 
-
-
+footer {
+    align-self:end;
+}
 
 
 @media screen and (max-width: 768px) {
-    .bikees, .financial, .tiny-one, .portfolio-title, .wheel, .switch, .transworld, .unity, .gratia {
-        grid-column:1/13;
-        grid-row:auto;
+    .portfolio-item {
+        grid-column:span 6;
     }
 
-    .portfolio-title .divider {
-        justify-self: center;
+    .portfolio-section-title {
+        grid-column:span 12;
     }
+}
 
-    .portfolio {
-        width:95%;
+@media screen and (max-width: 425px) {
+    .portfolio-item {
+        grid-column:span 12;
     }
-
 }
