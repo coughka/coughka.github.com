@@ -52,7 +52,7 @@ header {
     font-size:calc(1rem + 0.5vw);
     padding:0.77rem 1rem;
     vertical-align: middle;
-    transition: background 1s ease-in-out;
+    transition: background 0.2s ease-in-out;
     border-radius:15px;
     cursor:pointer;
     white-space: nowrap;
@@ -149,7 +149,7 @@ header .illustration {
 .section-title {
     display:grid;
     width:100%;
-    margin:2.5% 0;
+    margin:1.25% 0;
     justify-content: start;
 }
 
