@@ -8,6 +8,10 @@
     margin:1rem auto;
 }
 
+.portofolio-content section {
+    padding:0;
+}
+
 .section-title-content {
     width:75%;
     margin:0 auto;
@@ -49,7 +53,8 @@
     min-height:50vh;
     display:grid;
     align-items:end;
-    background-size:cover;    
+    background-size:cover; 
+    overflow:hidden;   
 }
 
 .bikees {
@@ -97,7 +102,7 @@
     grid-column: span 4;
 }
 
-.portfolio-section-title, .gratia, .tbc {
+.portfolio-section-title, .gratia, .tbc, .velox {
     grid-column:span 12;
 }
 
