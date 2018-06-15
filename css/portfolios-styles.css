@@ -66,13 +66,12 @@
 }
 
 .unity {
-    grid-column: span 8;
     background-image:url("../images/portfolio-preview/unity-preview.png");        
 }
 
 .transworld {
     background-image:url("../images/portfolio-preview/transworld-preview-4.png");
-    grid-row:2;
+    
 }
 
 .finance {
@@ -81,7 +80,6 @@
 }
 
 .tyny {
-    grid-column:span 4;
     background-image:url("../images/portfolio-preview/tiny-one-preview-3.png");
 }
 
@@ -92,17 +90,30 @@
 .gratia {
     background-image:url("../images/portfolio-preview/gratia-preview.png");
     background-size:contain;
+    
 }
 
-.gratia, .finance, .switch {
+.pixture {
+    background-image:url("../images/portfolio-preview/pixture-preview.png");
+    background-size:contain;
+    grid-row:2;
+}
+
+.velox {
+    background-image:url("../images/portfolio-preview/velox-preview.png");
+    background-size:contain;
+    
+}
+
+.gratia, .finance, .switch, .transworld, .unity {
     grid-column:span 6;
 }
 
-.bikees, .wheel-and-wheelbar, .transworld {
+.bikees, .wheel-and-wheelbar, .tyny {
     grid-column: span 4;
 }
 
-.portfolio-section-title, .gratia, .tbc, .velox {
+.portfolio-section-title, .gratia, .pixture, .velox, .tbc {
     grid-column:span 12;
 }
 
