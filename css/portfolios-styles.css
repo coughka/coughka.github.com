@@ -96,13 +96,18 @@
 .pixture {
     background-image:url("../images/portfolio-preview/pixture-preview.png");
     background-size:contain;
+    
+}
+
+.veggie   {
+    background-image:url("../images/portfolio-preview/veggie-preview.png");
+    background-size:contain;
     grid-row:2;
 }
 
 .velox {
     background-image:url("../images/portfolio-preview/velox-preview.png");
-    background-size:contain;
-    
+    background-size:contain;   
 }
 
 .gratia, .finance, .switch, .transworld, .unity {
@@ -113,7 +118,7 @@
     grid-column: span 4;
 }
 
-.portfolio-section-title, .gratia, .pixture, .velox, .tbc {
+.portfolio-section-title, .gratia, .pixture, .velox, .tbc, .veggie {
     grid-column:span 12;
 }
 
