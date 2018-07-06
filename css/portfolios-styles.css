@@ -101,7 +101,7 @@
 
 .veggie   {
     background-image:url("../images/portfolio-preview/veggie-preview.png");
-    background-size:contain;
+    
     grid-row:2;
 }
 
@@ -110,7 +110,13 @@
     background-size:contain;   
 }
 
-.gratia, .finance, .switch, .transworld, .unity {
+.yesenglish {
+    background-image:url("../images/portfolio-preview/yesenglish-preview.png");
+    grid-row:2;
+    background-size:contain; 
+}
+
+.gratia, .finance, .switch, .transworld, .unity, .yesenglish, .veggie {
     grid-column:span 6;
 }
 
@@ -118,7 +124,7 @@
     grid-column: span 4;
 }
 
-.portfolio-section-title, .gratia, .pixture, .velox, .tbc, .veggie {
+.portfolio-section-title, .gratia, .pixture, .velox, .tbc {
     grid-column:span 12;
 }
 
