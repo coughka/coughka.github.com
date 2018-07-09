@@ -165,4 +165,8 @@ footer {
     .portfolio-item {
         grid-column:span 12;
     }
+    
+    .veggie {
+        grid-row:3;
+    }
 }
