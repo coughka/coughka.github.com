@@ -2,6 +2,10 @@
     background-color:rgba(219,120,120,1);
 }
 
+.gallery .section-title {
+    justify-content: center;
+}
+
 .illustration-content {
     display:grid;
     grid-template-columns:repeat(6,1fr);

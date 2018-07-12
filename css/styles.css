@@ -181,7 +181,7 @@ header .illustration {
     grid-template-columns:repeat(3,1fr);
     
     grid-gap:1rem;
-    margin:5% auto;
+    margin: 2.5vh auto;
 }
 
 .what-i-do-item {
