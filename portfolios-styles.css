@@ -1,0 +1,161 @@
+@import url("normalize.css");
+
+main {
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-column-gap:1rem;
+    padding:0 1rem;
+}
+
+.portfolio-block {
+    height:100vh;
+    display:grid;
+    align-items:end;
+    padding:0;
+    grid-column:span 12;
+    margin-bottom:1rem;
+    background-size:contain;
+    border-radius:1rem;
+}
+
+.portfolio-head {
+    grid-column:span 12;
+}
+
+.portfolio-block-info {
+    background-color:rgba(0,0,0,0.75);
+    display:grid;
+    color:rgba(255,255,255,.75);
+    text-align:center;
+}
+
+.portfolio-block-info .btn {
+    justify-self:center;
+    position: relative;
+    top:-1rem;
+}
+
+.content {
+    width:75%;
+    margin:0 auto;
+}
+
+.content .section-title {
+    width:50%;
+    margin:0 auto;
+}
+
+.portfolio-divider {
+    margin:2.5% auto;
+    width:95%;
+    height:0.5rem;
+    background-color:black;
+}
+
+.section-title img {
+    width:50%;
+    margin:0 auto;
+}
+
+.ryby {
+    background-image:url("../images/portfolio-preview/freshyo-preview.jpg");
+}
+
+.meet-up {
+    background-image:url("../images/portfolio-preview/bikees-preview-2.png");
+}
+
+.bikees {
+    background-image:url("../images/portfolio-preview/bikees-preview-2.png");
+}
+
+.wheel-and-wheelbar {
+    background-image:url("../images/portfolio-preview/wheel-and-wheelbar-preview.png");
+}
+
+.unity {
+    background-image:url("../images/portfolio-preview/unity-preview.png");        
+}
+
+.transworld {
+    background-image:url("../images/portfolio-preview/transworld-preview-4.png");   
+}
+
+.finance {
+    background-image:url("../images/portfolio-preview/preview-finance-switch.png");
+    background-size:contain;
+}
+
+.tyny {
+    background-image:url("../images/portfolio-preview/tiny-one-preview-3.png");
+}
+
+.switch {
+    background-image:url("../images/portfolio-preview/Switch-studio-preview.png");
+}
+
+.gratia {
+    background-image:url("../images/portfolio-preview/gratia-preview.png");
+    background-size:contain;    
+}
+
+.pixture {
+    background-image:url("../images/portfolio-preview/pixture-preview.png");
+    background-size:contain;    
+}
+
+.veggie   {
+    background-image:url("../images/portfolio-preview/veggie-preview.png");
+    background-size:contain;
+}
+
+.velox {
+    background-image:url("../images/portfolio-preview/velox-preview.png");
+    background-size:contain;   
+}
+
+.yesenglish {
+    background-image:url("../images/portfolio-preview/yesenglish-preview.png");
+    background-size:contain;
+}
+
+.radio-silence {
+    background-image:url("../images/portfolio-preview/radio-silence-preview.png");
+    background-size:contain; 
+}
+
+.meet-up {
+    background-image:url("../images/portfolio-preview/meet-up-preview.jpg");
+}
+
+.transworld, .unity, .velox, .finance, .veggie, .radio-silence, .meet-up, .ryby {
+    grid-column:span 6;
+}
+
+.tyny, .wheel-and-wheelbar, .bikees, .switch {
+    grid-column:span 3;
+}
+
+.tbc {
+    text-align: center;
+}
+
+footer {
+    align-self:end;
+}
+
+@media screen and (max-width: 768px) {
+    .tyny, .wheel-and-wheelbar, .bikees, .switch {
+        grid-column:span 6;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .transworld, .unity, .velox, .finance, .tyny, .wheel-and-wheelbar, .bikees, .switch {
+        grid-column:span 12;
+    }
+
+    .content {
+        width:95%;
+    }
+}
