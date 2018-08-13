@@ -4,6 +4,7 @@ main {
     display:grid;
     grid-template-columns: repeat(12,1fr);
     grid-column-gap:1rem;
+    padding:0 1rem;
 }
 
 .portfolio-block {
@@ -13,7 +14,8 @@ main {
     padding:0;
     grid-column:span 12;
     margin-bottom:1rem;
-    background-size:contain; 
+    background-size:contain;
+    border-radius:1rem;
 }
 
 .portfolio-head {
@@ -53,6 +55,14 @@ main {
 .section-title img {
     width:50%;
     margin:0 auto;
+}
+
+.ryby {
+    background-image:url("../images/portfolio-preview/freshyo-preview.jpg");
+}
+
+.meet-up {
+    background-image:url("../images/portfolio-preview/bikees-preview-2.png");
 }
 
 .bikees {
@@ -114,7 +124,11 @@ main {
     background-size:contain; 
 }
 
-.transworld, .unity, .velox, .finance {
+.meet-up {
+    background-image:url("../images/portfolio-preview/meet-up-preview.jpg");
+}
+
+.transworld, .unity, .velox, .finance, .veggie, .radio-silence, .meet-up, .ryby {
     grid-column:span 6;
 }
 
