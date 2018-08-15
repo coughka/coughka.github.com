@@ -197,6 +197,12 @@ i {
     align-self:end;
 }
 
+@media screen and (max-width:768px) {
+    .folio-block {
+        grid-column:span 12;
+    }
+}
+
 
 
 @media screen and (max-width:600px) {
@@ -214,5 +220,9 @@ i {
 
     .exp {
         grid-row:1;
+    }
+
+    footer, .footer-content {
+        height:auto;
     }
 }
