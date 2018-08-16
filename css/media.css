@@ -1,0 +1,27 @@
+@media screen and (max-width:768px) {
+    .folio-block {
+        grid-column:span 12;
+    }
+
+    .work-content, .education-content, .jumberton-content {
+        height:auto;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .work-block, .education-block, .jumberton-block {
+        grid-column:span 12;
+    }
+
+    .picture {
+        align-self:center;
+    }
+
+    .exp {
+        grid-row:1;
+    }
+
+    footer, .footer-content {
+        height:auto;
+    }
+}
