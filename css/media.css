@@ -6,7 +6,10 @@
     .work-content, .education-content, .jumberton-content {
         height:auto;
     }
-}
+
+    .work-block, .education-block, .jumberton-block {
+        align-self:start;
+    }
 
 @media screen and (max-width:600px) {
     .work-block, .education-block, .jumberton-block {
