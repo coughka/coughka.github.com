@@ -61,6 +61,10 @@ h2 {
     font-size:2rem;
 }
 
+h3 {
+    font-size:1.414rem;
+}
+
 .jumberton p {
     font-size:1.414rem;
 }
@@ -133,6 +137,10 @@ img {
 figure {
     width:75%;
     margin:0.25rem auto;
+}
+
+.work-block-item figure, .education-block-content figure {
+    width:50%;
 }
 
 .folio-content figure{
