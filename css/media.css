@@ -10,6 +10,7 @@
     .work-block, .education-block, .jumberton-block {
         align-self:start;
     }
+}
 
 @media screen and (max-width:600px) {
     .work-block, .education-block, .jumberton-block {
@@ -26,5 +27,13 @@
 
     footer, .footer-content {
         height:auto;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .social-bar, .copyright {
+        grid-column:span 12;
+        justify-self:center;
+        padding-top:1rem;
     }
 }

@@ -9,6 +9,10 @@ body {
     background-image:url("../img/qbkls.png");
 }
 
+::selection {
+    background: #ffd900;
+}
+
 header {
     border-left:10px solid tomato;
 }
@@ -78,6 +82,7 @@ h3 {
     font-family:"Montserrat", sans-serif;
     margin:1rem 0;
     cursor:pointer;
+    user-select: none;
 }
 
 p {
@@ -103,6 +108,7 @@ a {
 .menu a {
     font-family:"Anonymous Pro", 'Courier New', Courier, monospace;
     margin-right:1rem;
+    user-select: none;
 }
 
 .menu a:hover {
