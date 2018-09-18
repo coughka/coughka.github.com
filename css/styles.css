@@ -26,8 +26,6 @@ header {
     border-left:10px solid tomato;
 }
 
-
-
 .header-content, .jumberton-content, .work-content, .education-content, .footer-content {
     width:85%;
     margin:0 auto;
@@ -85,7 +83,7 @@ h3 {
     user-select: none;
 }
 
-p {
+p, li {
     font-family:"Open-Sans", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -115,6 +113,21 @@ a {
     border-bottom:10px tomato solid;    
 }
 
+ul {
+    padding:0;
+}
+
+ul li {
+    list-style: none;
+    display:inline-block;
+    padding:0.25rem 0.5rem;
+    margin:0.25rem;
+    background-color: hsl(85, 59%, 56%);
+    border-radius:1rem;
+    text-transform: uppercase;
+
+}
+
 .content {
     display:grid;
     grid-template-columns: repeat(12,1fr);
@@ -130,10 +143,6 @@ a {
 
 .jumberton-block {
     grid-column:span 6;
-}
-
-.picture {
-
 }
 
 img {
@@ -169,20 +178,12 @@ figcaption {
 }
 
 .work-content, .education-content {
-    height:100vh;
+    min-height:100vh;
 }
 
 .work-block, .education-block, .jumberton-block {
     grid-column:span 6;
     align-self:end;
-}
-
-.illustration-block {
-    
-}
-
-.vertical img{
-
 }
 
 .work-block-item, .education-block-content {
@@ -203,7 +204,7 @@ figcaption {
 }
 
 .education {
-    border-left:10px solid #9ad14b;
+    border-left:10px solid hsl(85, 59%, 56%);
 }
 
 footer {
