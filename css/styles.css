@@ -1,12 +1,12 @@
 
 @import url("normalize.css");
-@import url("media.css");
+@import url("animate.css");
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
-    background-image:url("../img/qbkls.png");
+    background-color:hsl(0, 0%, 95%);
 }
 
 ::selection {
@@ -15,6 +15,10 @@ body {
 
 header {
     border-left:10px solid tomato;
+}
+
+.folio {
+    border-right:10px solid hsl(51, 100%, 50%);
 }
 
 .header-content, .footer-content {
@@ -42,45 +46,60 @@ header {
     grid-column-gap:0.25rem;
 }
 
-h1,h2,h3,h4, h5 {
-    text-transform:uppercase;
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+html {font-size: 1em;}
+
+body {
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
 }
 
-h3,h4, h5 {
-    margin:0;
-}
+p {margin-bottom: 1.3em;}
 
-h5 {
-    margin-bottom:1rem;
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  line-height: 1.2;
+  text-transform:uppercase;
+  font-family:"Montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h1 {
-    font-size:3rem;
+  font-size: 3.998rem;
 }
 
 h2 {
-    font-size:2rem;
+    font-size: 1.999rem;
 }
 
-h3 {
-    font-size:1.414rem;
+.education-block h2, .work-block h2 {
+    margin:2rem 1rem;
+    font-weight: 700;
 }
+
+.folio-block h2 {
+    color:hsl(0, 0%, 95%);
+    text-shadow: hsl(0, 0%, 5%) 1px 0 10px;
+}
+
+h3 {font-size: 1.999rem;}
+
+h4 {font-size: 1.414rem;}
+
+small, .font_small {font-size: 0.707rem;}
 
 .jumberton p {
     font-size:1.414rem;
 }
 
-.btn {
-    background-color:rgba(0,0,0,0.8);
-    color:rgba(255,255,255,0.8);
-    padding:1rem 0.5rem;
-    border:none;
-    border-radius:0.5rem;
+.jumberton-block .btn {
+    background-color:hsla(0, 0%, 0%, 0.8);
     font-family:"Montserrat", sans-serif;
     margin:1rem 0;
-    cursor:pointer;
     user-select: none;
+}
+
+.jumberton-block .btn:hover {
+    background-color:hsla(0, 0%, 0%, 0.75);
 }
 
 p, li {
@@ -107,6 +126,7 @@ a {
     font-family:"Anonymous Pro", 'Courier New', Courier, monospace;
     margin-right:1rem;
     user-select: none;
+    color:hsla(0, 0%, 0%, 0.95);
 }
 
 .menu a:hover {
@@ -177,8 +197,9 @@ figcaption {
     margin-top:4rem;
 }
 
-.work-content, .education-content {
+.section {
     min-height:100vh;
+    margin:5vh 0;
 }
 
 .work-block, .education-block, .jumberton-block {
@@ -211,6 +232,7 @@ footer {
     min-height:15vh;
     background-color:rgba(0,0,0,0.8);
     color:rgba(255,255,255,0.8);
+    margin:2.5vh 0 0 0;
 }
 
 .social-bar, .copyright {
@@ -225,37 +247,113 @@ i {
 }
 
 .folio-block {
-    grid-column:span 12;
+    grid-column:span 6;
     align-self:end;
+    min-height:50vh;
+    overflow: hidden;
+    background-color:hsl(85, 59%, 56%);
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -7px rgba(0,0,0,0.2);
+    background-size:cover;
 }
 
+.wheel-and-wheelbar, .unity, .transworld {
+    grid-column:span 4;
+}
 
+.folio-block-content {
+    display:grid;
+    align-items:center;
+    justify-items:center;
+    min-height:50vh;
+}
+
+.mnklt {
+    background-image:linear-gradient(to bottom, rgba(6, 32, 51, 0.8), rgba(6, 32, 51, 0.8)),
+                    url("../img/portofolio/MNKLT.jpg");
+}
+
+.meet-brandi {
+    background-image:linear-gradient(to bottom, rgba(6, 32, 51, 0.8), rgba(6, 32, 51, 0.8)),
+                    url("../img/portofolio/meet-brandi.jpg");
+}
+
+.designer-and-maker {
+    background-image:linear-gradient(to bottom, rgba(6, 32, 51, 0.8), rgba(6, 32, 51, 0.8)),
+                    url("../img/portofolio/designer-and-maker.jpg");
+}
+
+.vivek {
+    background-image:linear-gradient(to bottom, rgba(6, 32, 51, 0.8), rgba(6, 32, 51, 0.8)),
+                    url("../img/portofolio/vivek.jpg");
+}
+
+.diff {
+    background-image:linear-gradient(to bottom, rgba(6, 32, 51, 0.8), rgba(6, 32, 51, 0.8)),
+                    url("../img/portofolio/A-not-so-diff.jpg");
+}
+
+.ryby {
+    background-image:linear-gradient(to bottom, rgba(6, 32, 51, 0.8), rgba(6, 32, 51, 0.8)),
+                    url("../img/portofolio/freshyo-preview.jpg");
+}
+
+.yes-english {
+    background-image:linear-gradient(to bottom, rgba(6, 32, 51, 0.8), rgba(6, 32, 51, 0.8)),
+                    url("../img/portofolio/yesenglish-preview.jpg");
+}
+
+.meet-up {
+    background-image:linear-gradient(to bottom, rgba(6, 32, 51, 0.8), rgba(6, 32, 51, 0.8)),
+                    url("../img/portofolio/meet-up-preview.jpg");
+}
+
+.radio-silence {
+    background-image:linear-gradient(to bottom, rgba(6, 32, 51, 0.8), rgba(6, 32, 51, 0.8)),
+                    url("../img/portofolio/radio-silence-preview.jpg");
+}
+
+.gratia {
+    background-image:linear-gradient(to bottom, rgba(6, 32, 51, 0.8), rgba(6, 32, 51, 0.8)),
+                    url("../img/portofolio/gratia-preview.jpg");
+}
+
+.veggie {
+    background-image:linear-gradient(to bottom, rgba(6, 32, 51, 0.8), rgba(6, 32, 51, 0.8)),
+                    url("../img/portofolio/veggie-preview.jpg");
+}
+
+.unity {
+    background-image:linear-gradient(to bottom, rgba(6, 32, 51, 0.8), rgba(6, 32, 51, 0.8)),
+                    url("../img/portofolio/unity-preview.jpg");
+}
+
+.transworld {
+    background-image:linear-gradient(to bottom, rgba(6, 32, 51, 0.8), rgba(6, 32, 51, 0.8)),
+                    url("../img/portofolio/transworld-preview.jpg");
+}
+
+.wheel-and-wheelbar {
+    background-image:linear-gradient(to bottom, rgba(6, 32, 51, 0.8), rgba(6, 32, 51, 0.8)),
+                    url("../img/portofolio/wheel-and-wheelbar-preview.jpg");
+}
+
+.pixture {
+    background-image:linear-gradient(to bottom, rgba(6, 32, 51, 0.8), rgba(6, 32, 51, 0.8)),
+                    url("../img/portofolio/pixture-preview.jpg");
+}
 
 .folio-content {
     grid-gap:1rem;
 }
 
-.unity, .transworld, .wheel-and-wheelbar, .gratia {
-    grid-column:span 3;
-}
 
-.veggie, .radio-silence, .meet-up, .vivek, .meet-brandi, .designer-and-maker {
-    grid-column:span 4;
-}
-
-.yes-english, .pixture {
-    grid-column:span 6;
-}
-
-.yes-english {
-    align-self:end;
-}
 
 /*SLIDER*/
 
 .slider {
     width:95%;
     margin: 1rem auto;
+    height:auto;
     }
 
 .slick-slide {
